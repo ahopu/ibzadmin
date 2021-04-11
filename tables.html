@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/model-p.css" rel="stylesheet">	
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
@@ -359,9 +360,90 @@
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Products List</h1>
-                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-plus fa-sm text-white-50"></i> Add New Products</a>
+					<!-- Button to Open the Modal -->
+					<button type="button" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm show-modal" data-toggle="modal" data-target="#myProducts">
+					 <i class="fas fa-plus fa-sm text-white-50"></i> Add New Products
+					</button>				
                     </div>
+					
+                    <!-- The Modal -->
+                      <div class="modal fade" id="myProducts">
+                        <div class="modal-dialog modal-lg">
+                          <div class="modal-content">
+      
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                              <h4 class="modal-title font-weight-bold text-primary"> <i class="fas fa-cart-plus"></i> Add New Products</h4>
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+        
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                            <div class="form-bg">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-container">
+                                                <h3 class="title"><i class="fab fa-shopify"></i> New Products</h3>
+                                                <form class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <label>Products Name</label>
+                                                        <input type="text" class="form-control" placeholder="Products Name">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Products Code</label>
+                                                        <input type="text" class="form-control" placeholder="Products Code">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Products Category</label>
+                                                        <input type="text" class="form-control" placeholder="Products Category">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Purchase price</label>
+                                                        <input type="text" class="form-control" placeholder="Purchase price">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Wholesale price</label>
+                                                        <input type="text" class="form-control" placeholder="Wholesale price">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Regular price</label>
+                                                        <input type="text" class="form-control" placeholder="Regular price">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Regular price</label>
+                                                        <input type="text" class="form-control" placeholder="Regular price">
+                                                    </div>
+                                                    <div class="file-field form-group">
+                                                        <div class="d-flex justify-content-center">
+                                                          <div class="btn btn-mdb-color btn-rounded float-left">
+                                                            <input type="file">
+                                                          </div>
+                                                        </div>
+                                                      </div>
+						  
+                                                    <div class="check-terms">
+                                                        <input type="checkbox" class="checkbox">
+                                                        <span class="check-label">I agree to the terms</span>
+                                                    </div>
+                                                    <button class="btn btn-primary btn-block signup"><i class="fas fa-plus fa-sm text-white-50"></i> Add New Products</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+        
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+        
+                          </div>
+                        </div>
+                      </div><!-- Model End -->
+					  
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
